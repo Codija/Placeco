@@ -19,7 +19,7 @@ function loadData() {
 
     // load streetview
     $greeting.text('So you want to live in ' + $street + ', ' + $city);
-    var $streetview = 'https://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + $street + ',' + $city;
+    var $streetview = 'https://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + $street + ',' + $city&key=AIzaSyBlVnAXqLYftv-wDYkBXsNkuyEjwIcwKoo;
     if($("#img-cont:has(img.bgimg)").length > 0){
         $('img').remove();
         $body.append('<img class="bgimg" src="' + $streetview + '">');
